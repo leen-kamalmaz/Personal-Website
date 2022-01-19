@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Leen Kamalmaz Personal Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <a></a>
+            <div class="nav-links2">
+                <ul>
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="professional-design.html">PROFESSIONAL DESIGN PORTFOLIO</a></li>
+                    <li><a href="design.html">PERSONAL DESIGN PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class=contact>
+            <h1>Contact</h1>
+            <br>
+            <div class="contactBox">
+                <form action="contactPage.php" method="post" name="form">          
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..." required>
+    
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email address..." required>
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Your message..." style="height:200px" required></textarea>
+          
+                    <button type="submit" onclick = "fun();" class="btn">Send </button>
+                </form>
+            </div>
+            <script type = "text/javascript">  
+                function fun() {  
+                    var n=document.forms["form"]["name"].value;
+                    var e=document.forms["form"]["email"].value;
+                    var m=document.forms["form"]["message"].value;
+                    if (n == null || n == "" || e == null || e == "" || m == null || m == "") {
+                        alert("Please fill in all fields");
+                        return false;
+                    }
+                    else {
+                        alert ("Your message has been sent!");
+                        return true;  
+                    }
+                }  
+            </script>
+            <br>
+            <br>
+        </section>
+    </body>
+</html>
+        
