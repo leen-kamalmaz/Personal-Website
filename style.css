@@ -9,7 +9,6 @@ body{
 .about{
     min-height: 100vh;
     width: 100%;
-    /* background-image: linear-gradient(rgba(4,9,30,0.8,),rgba(4,9,30,0.8,)), url(); */
 }
 .container {position: relative;}
 .container background-video {
@@ -66,8 +65,7 @@ nav{
 }
 .nav-links{
     flex: 1;
-    text-align: right;
-    
+    text-align: right; 
 }
 .nav-links ul li{
     top: 0;
@@ -156,12 +154,28 @@ nav{
     text-align: left;
     padding-top: 10vmin;
 }
+.professionalDesign{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    padding-top: 10vmin;
+}
 h1{
     font-size: 6vmin;
     font-weight: 600;
     text-align: center;
 }
 .design p{
+    text-align: center;
+    color: rgb(97, 97, 97);
+    font-size: 2.5vmin;
+    line-height: 3vmin;
+    font-weight: 300;
+    padding-top: 2vmin;
+    padding-bottom: 10px;
+}
+.professionalDesign p{
     text-align: center;
     color: rgb(97, 97, 97);
     font-size: 2.5vmin;
@@ -185,6 +199,35 @@ h1{
     width: 80vw;
     margin-bottom: 4vw;
 }
+.info-box2{
+    position: relative;
+    top: 5vmin; 
+    width: 19.2vw;
+    margin-bottom: 4vw;
+    display: inline-block;
+    padding: 0 0;
+}
+.my-design-work h2{
+    position: relative; 
+    top: 2vw; 
+    left: 2vw;
+    margin-right: 2vw;
+    font-size: 2vw;
+    font-weight: 400;
+    bottom: 3vw;
+    margin-bottom: 2vw;
+}
+.my-design-work p2{
+    position: relative; 
+    top: 1vw; 
+    left: 2vw; 
+    margin-right: 0vw;
+    text-align: left;
+    font-size: 1.2vw;
+    font-weight: 200;
+    line-height: 1.2vw;
+    margin-bottom: 0vw;
+}
 .my-design-work p{
     position: relative; 
     top: 1vw; 
@@ -204,8 +247,12 @@ h1{
     width: 80vw;
 }
 #design-pic2{
-    width: 32.4%; 
-    padding: 0px;
+    position: relative;
+    width: 19.2vw;
+}
+.Design2Story {
+    margin: 0rem;
+    padding: 0 0;
 }
 .layer{
     background: black;
@@ -241,8 +288,78 @@ h1{
 .layer:hover a{
     color: transparent;
 }
+.layer h2 {
+    color: rgba(226,65,119,1);
+    transition: 0.5s;
+}
+.layer:hover h2 {
+    color: transparent;
+}
+.layer p2 {
+    color: white;
+    transition: 0.5s;
+}
+.layer:hover p2 {
+    color: transparent;
+}
+.layer p2 a{
+    color: white;
+    transition: 0.5s;
+}
 
 /*------ contact ------*/
+
+/* links for contact and design */
+nav{
+    right:0;
+    position: absolute;
+    top:0;
+    z-index: 1;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links2{
+    flex: 1;
+    text-align: right; 
+}
+.nav-links2 ul li{
+    top: 0;
+    list-style: none;
+    display: inline-block;
+    padding-inline: 8px 12px;
+    position: relative;
+}
+.nav-links2 ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links2 ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #e24177;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links2 ul li:hover::after{
+    width: 100%;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 .contact{
     position: relative;
     width: 80%;
@@ -250,17 +367,28 @@ h1{
     text-align: left;
     padding-top: 10vmin;
 }
-.contact h1{
-    font-size: 7vmin;
-    font-weight: 600;
-    text-align: center;
+  
+/* Add a background color and some padding around the form */
+.contactBox {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
 }
-.contact p{
-    text-align: center;
-    color: rgb(97, 97, 97);
-    font-size: 3vmin;
-    line-height: 4vmin;
-    font-weight: 300;
-    padding-top: 2vmin;
-    padding-bottom: 10px;
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #ccc;
+    border: 1px solid #ccc;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 0px 0.9px 0px 0.9px;
+}
+.btn:hover{
+    border: 1px solid #e24177;
+    background: #e24177;
+    color:white;
+    transition: 1s;
 }
