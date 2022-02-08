@@ -1,4 +1,7 @@
 <?php 
+    header("Location: contact.html");
+    exit;
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $from = 'sarahkamalmaz@gmail.com'; 
@@ -11,6 +14,4 @@
     $headers = "From: $from \r\n";
     $headers .= "Reply-To: $email \r\n";
     mail ($to, $subject, $body, $headers);
-
-    header("Location: contact.html");
 ?>
