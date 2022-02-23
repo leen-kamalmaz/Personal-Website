@@ -24,7 +24,7 @@
             <h1>Contact</h1>
             <br>
             <div class="contactBox">
-                <form action="contactPage.php" method="post" name="form">          
+                <form action="contactPage.php" method="post" id="form">          
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name..." required>
     
@@ -34,16 +34,17 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" placeholder="Your message..." style="height:200px" required></textarea>
           
-                    <button type="submit" onclick = "message();" class="btn">Send</button>
+                    <button type="submit" class="btn">Send</button>
+
                 </form>
             </div>
+
             <script type = "text/javascript">
-                function message() {
-                    if (form.checkValidity()) {
-                        alert("Adding Succesful!");
-                    }
-                }
+                document.getElementById('form').onsubmit = function () {
+                    alert("Thank you for contacting me!");
+                };
             </script>
+
 
             <!-- <script type = "text/javascript">  
                 function fun() {  
